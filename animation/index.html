@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress {
+            background-color: rgb(255, 6, 39);
+            height: 3px;
+            animation: load 0.1s ease-in-out 1;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            height: 899px;
+            background-color: yellow
+        }
+        @keyframes load {
+        
+        0%{
+            width: 0;
+            }
+            50%{
+            width: 90vw;
+            }
+            100%{
+                width: 100vw;
+            }
+        }
+        @keyframes rotate {
+        0%{
+           transform: rotate3d(9deg);
+            }
+            50%{
+            width: 90vw;
+            }
+            100%{
+           transform: rotate3d(160deg);
+            }
+        }
+        img{
+           animation: rotate 1.3s ease-in-out infinite ; 
+        }
+        @keyframes slide1 {
+            0% {
+           transform: translate(0vw);
+            }
+            100% {
+                transform: translate(92vw);
+            }
+        }
+            
+        @keyframes slide2 {
+            0%{
+              transform: translate (-8vw); 
+            }
+
+            100% {
+                transform: translate(85vw);
+        }
+        }
+        img{
+            display: block;
+            margin: auto;
+        } 
+        .slider{
+            background-color: rgb(163, 14, 14);
+            height: 523px;
+            overflow: hidden;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .img1{
+           transform: translate(-8vw);
+           animation: slide 1s 2s forwards alternate-reverse;
+        }
+           .img2{
+             transform: translate(0vw);
+             animation: slide2 1s 2s forwards alternate-reverse;
+           }
+           .img3{
+           transform: translate(8vw); 
+           animation: slide2 0.1s 0.2s forwards alternate-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+ <img src="dragon.png" alt="" width="122px">
+    <div class="slider">
+        <img class="img1" src="./img/ok1.png" alt="">
+        <img class="img2" src="./img/ok2.png" alt="">
+        <img class="img3" src="./img/ok3.png" alt="">
+    </div>
+    </main>
+<audio src="./img/tuesday-glitch-soft-hip-hop-118327.mp3"></audio> <embed src="./img/tuesday-glitch-soft-hip-hop-118327.mp3" type="">
+<footer>
+    Made By Ali Muhammad &copy;2022
+</footer>
+</body>
+</html>
